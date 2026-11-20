@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ma-la</title>
+  <meta name="description" content="Ma-la — site vitrine : services, réalisations et contact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo">Ma<span>·</span>la</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="#apropos">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#contact" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Bienvenue</p>
+        <h1>Des idées simples,<br><em>joliment</em> réalisées.</h1>
+        <p class="lead">Ma-la accompagne particuliers et entreprises pour donner forme à leurs projets — avec soin, clarté et un brin de créativité.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn">Démarrer un projet</a>
+          <a href="#realisations" class="btn btn-ghost">Voir les réalisations</a>
+        </div>
+      </div>
+      <div class="hero-shape" aria-hidden="true"></div>
+    </section>
+
+    <section id="apropos" class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">À propos</p>
+          <h2>Une approche humaine et sur mesure</h2>
+        </div>
+        <div>
+          <p>Chaque projet commence par une écoute attentive. Nous prenons le temps de comprendre vos besoins, vos contraintes et vos envies avant de proposer une solution adaptée.</p>
+          <ul class="stats">
+            <li><strong data-count="120">0</strong><span>projets livrés</span></li>
+            <li><strong data-count="8">0</strong><span>années d’expérience</span></li>
+            <li><strong data-count="98">0</strong><span>% de clients satisfaits</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">Services</p>
+        <h2>Ce que nous proposons</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-icon">✦</div>
+            <h3>Conseil</h3>
+            <p>Analyse de vos besoins et définition d’une stratégie claire pour atteindre vos objectifs.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">◐</div>
+            <h3>Design</h3>
+            <p>Identité visuelle, maquettes et supports pensés pour être beaux et efficaces.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">❖</div>
+            <h3>Réalisation</h3>
+            <p>Mise en œuvre soignée de A à Z, avec un suivi régulier et transparent.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="realisations" class="section">
+      <div class="container">
+        <p class="eyebrow">Réalisations</p>
+        <h2>Quelques projets récents</h2>
+        <div class="gallery">
+          <figure class="tile reveal" style="--hue: 18"><figcaption><strong>Atelier Lumière</strong><span>Identité visuelle</span></figcaption></figure>
+          <figure class="tile reveal" style="--hue: 160"><figcaption><strong>Maison Verte</strong><span>Site web</span></figcaption></figure>
+          <figure class="tile reveal" style="--hue: 220"><figcaption><strong>Café Nomade</strong><span>Stratégie</span></figcaption></figure>
+          <figure class="tile reveal" style="--hue: 330"><figcaption><strong>Studio Ondes</strong><span>Design</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <blockquote class="quote reveal">
+          <p>« Une collaboration fluide et un résultat qui a dépassé nos attentes. Nous recommandons sans hésiter. »</p>
+          <cite>— Claire D., fondatrice</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Parlons de votre projet</h2>
+          <p>Un message suffit pour démarrer. Nous vous répondons sous 48 heures.</p>
+        </div>
+        <form class="contact-form" novalidate>
+          <label>Nom
+            <input type="text" name="nom" required autocomplete="name">
+          </label>
+          <label>E-mail
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+          <label>Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn">Envoyer</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#" class="logo">Ma<span>·</span>la</a>
+      <p>© <span id="year"></span> Ma-la. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
